@@ -1234,41 +1234,15 @@ textarea {
     gap: 40px;
     max-width: 1000px;
     margin: 0 auto;
-}
-
-.visi-left,
-.visi-right {
-    flex: 1;
-    min-width: 300px;
-    font-size: 22px;
-}
-
-.visi-right {
-    list-style: decimal;
-
-}
-
-.visi-left h2,
-.visi-right h2 {
-    text-decoration: underline;
-}
-
-.visi-right ul {
-    padding-left: 0;
-}
-
-.visi-right li {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 10px;
-    margin-bottom: 5px;
+    justify-content: center;
 }
 
 .flip-card {
     background-color: transparent;
     width: 100%;
     max-width: 450px;
-    height: 400px;
+    height: auto;
+    min-height: 400px;
     perspective: 1000px;
     flex: 1;
 }
@@ -1312,6 +1286,10 @@ textarea {
     margin-bottom: 10px;
 }
 
+.flip-card-front h2 {
+    font-size: 24px;
+}
+
 .flip-card-back {
     background-color: #00856b;
     color: white;
@@ -1323,6 +1301,13 @@ textarea {
 .flip-card-back h2 {
     margin-bottom: 10px;
     text-decoration: underline;
+    font-size: 22px;
+}
+
+.flip-card-back p,
+.flip-card-back li {
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .flip-card-back ul {
@@ -1332,6 +1317,59 @@ textarea {
 
 .flip-card-back li {
     margin-bottom: 10px;
+}
+
+/* Responsive untuk fon dan skrin kecil */
+@media (max-width: 768px) {
+    .visi {
+        padding: 30px 15px;
+    }
+
+    .visi-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .flip-card {
+        max-width: 95%;
+        min-height: 360px;
+    }
+
+    .flip-card-front img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .flip-card-front h2,
+    .flip-card-back h2 {
+        font-size: 20px;
+    }
+
+    .flip-card-back {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .flip-card-back li {
+        font-size: 15px;
+    }
+
+    .flip-card-back ul {
+        padding-left: 18px;
+    }
+}
+
+/* Landscape mode di fon */
+@media (orientation: landscape) and (max-height: 500px) {
+    .flip-card {
+        min-height: 320px;
+    }
+
+    .flip-card-back {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
 
 
