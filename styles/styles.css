@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* ############### top menu styling ######################### */
 
 .top-menu {
@@ -205,10 +209,9 @@ body {
     font-size: 20px;
 }
 
-
-
 .showcase-container img {
-    width: 500px;
+    width: 100%;
+    max-width: 300px; 
     height: auto;
     opacity: 0;
     transform: translateX(-30px);
