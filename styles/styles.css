@@ -1248,8 +1248,7 @@ textarea {
     background-color: transparent;
     width: 100%;
     max-width: 450px;
-    height: auto;
-    min-height: 400px;
+    height: 420px;
     perspective: 1000px;
     flex: 1;
 }
@@ -1280,6 +1279,7 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .flip-card-front {
@@ -1326,21 +1326,14 @@ textarea {
     margin-bottom: 10px;
 }
 
-/* Responsive untuk fon dan skrin kecil */
 @media (max-width: 768px) {
     .visi {
         padding: 30px 15px;
     }
 
-    .visi-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
-
     .flip-card {
-        max-width: 95%;
-        min-height: 360px;
+        max-width: 100%;
+        height: 500px;
     }
 
     .flip-card-front img {
@@ -1348,34 +1341,46 @@ textarea {
         height: 60px;
     }
 
-    .flip-card-front h2,
-    .flip-card-back h2 {
+    .flip-card-front h2 {
         font-size: 20px;
     }
 
     .flip-card-back {
-        font-size: 15px;
+        font-size: 16px;
         padding: 15px;
     }
 
+    .flip-card-back h2 {
+        font-size: 18px;
+    }
+
+    .flip-card-back p,
     .flip-card-back li {
         font-size: 15px;
     }
-
-    .flip-card-back ul {
-        padding-left: 18px;
-    }
 }
 
-/* Landscape mode di fon */
-@media (orientation: landscape) and (max-height: 500px) {
+@media (max-width: 1024px) and (orientation: landscape) {
     .flip-card {
-        min-height: 320px;
+        height: 450px;
     }
 
     .flip-card-back {
-        font-size: 14px;
-        padding: 10px;
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .flip-card-back h2 {
+        font-size: 17px;
+    }
+
+    .flip-card-front h2 {
+        font-size: 18px;
+    }
+
+    .flip-card-front img {
+        width: 50px;
+        height: 50px;
     }
 }
 
