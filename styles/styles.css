@@ -1551,6 +1551,38 @@ textarea {
     background-color: #eaeaea;
 }
 
+@media (max-width: 768px) {
+    .aboutme {
+        flex-direction: column;      
+        align-items: center;         
+        padding: 20px 15px;
+    }
+
+    .aboutme-container img {
+        max-width: 150px;           
+    }
+
+    .aboutme-form {
+        width: 100%;
+        max-width: 90%;              
+        margin-top: 20px;
+    }
+
+    .form-row-aboutme {
+        flex-direction: column;
+        align-items: flex-start;     
+    }
+
+    .form-row-aboutme label {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    .form-row-aboutme input {
+        width: 100%;
+    }
+}
+
 /* ############### tooltips ######################### */
 .tooltips {
     position: relative;
