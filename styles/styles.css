@@ -230,13 +230,15 @@ body {
 
 /* ############### showcase styling ######################### */
 .showcase-area {
-    height: 80vh;
-    background: url("../images/hero background.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 80vh;
+    background: url("../images/hero background.svg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
-
 .showcase-container {
     display: flex;
     flex-direction: row;
@@ -325,6 +327,18 @@ body {
         max-width: 300px;
         margin: 0 auto;
         display: block;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .showcase-area {
+        min-height: auto;
+        padding: 30px 15px;
+    }
+
+    .welcome-text,
+    .pss-text {
+        font-size: 22px;
     }
 }
 
