@@ -231,7 +231,7 @@ body {
 /* ############### showcase styling ######################### */
 .showcase-area {
     height: 80vh;
-    background: url("images/hero background.svg");
+    background: url("../images/hero background.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -336,7 +336,7 @@ body {
     text-align: center;
     min-height: 30vh;
     padding: 40px 20px;
-    background: url("images/hero background.svg") center/cover no-repeat;
+    background: url("../images/hero background.svg") center/cover no-repeat;
     overflow: hidden;
 }
 
