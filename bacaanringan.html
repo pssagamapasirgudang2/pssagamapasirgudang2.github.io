@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Sumber Sekolah Agama Pasir Gudang 2</title>
+    <link rel="icon" type="image/x-icon" href="images/logo sekolah.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="top-menu">
+        <div class="contact-info">
+            <span>sekagamapasirgudang2@gmail.com</span>
+            <span>+6018 7732701</span>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61564411024263" target="blank"><i
+                    class="fab fa-facebook-f"></i></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="images/logo sekolah 2.png" alt="logo sekolah">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                &#9776;<span class="menu-label">Menu</span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Laman Utama</a></li>
+                <li class="has-submenu">
+                    <a href="#" class="active">Koleksi Bahan</a>
+                    <ul class="submenu">
+                        <li><a href="bukuteks.html"><i class="fas fa-arrow-right"></i>Buku Teks</a></li>
+                        <li><a href="bacaanringan.html" class="active"><i class="fas fa-arrow-right"></i>Bacaan
+                                Ringan</a></li>
+                        <li><a href="akhbar.html"><i class="fas fa-arrow-right"></i>Bacaan Akhbar Online</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="#">Program</a>
+                    <ul class="submenu">
+                        <li><a href="aktiviti.html"><i class="fas fa-arrow-right"></i>Aktiviti</a></li>
+                        <li><a href="permainan.html"><i class="fas fa-arrow-right"></i>Permainan Interaktif</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="has-submenu">
+                    <a href="#">Tentang Kami</a>
+                    <ul class="submenu">
+                        <li><a href="carta_organisasi.html"><i class="fas fa-arrow-right"></i>Carta Organisasi</a>
+                        </li>
+                        <li><a href="visi.html"><i class="fas fa-arrow-right"></i>Visi dan Misi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="kemudahan.html">Kemudahan</a>
+                </li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const submenuParents = document.querySelectorAll('.has-submenu > a');
+
+        // Toggle main menu
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Toggle each submenu in mobile
+        submenuParents.forEach(link => {
+            link.addEventListener('click', function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault(); // prevent page reload
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        });
+    </script>
+
+    <!-- Tajuk Hero -->
+    <div class="showcase-hero">
+        <div class="showcase-hero-container">
+            <h2 class="showcase-text">Bacaan Ringan Dalam Talian</h2>
+        </div>
+    </div>
+
+    <!-- Section bacaan ringan -->
+    <section>
+        <div class="line-hebahan">
+            <h2>Koleksi Bacaan Ringan</h2>
+        </div>
+        <div class="bacaan-section">
+            <a href="https://online.fliphtml5.com/oiwnc/tfau/" target="_blank">
+                <img src="../images/22haribercerita.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.fliphtml5.com/oiwnc/yozf/#google_vignette" target="_blank">
+                <img src="../images/sisemut.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.fliphtml5.com/oiwnc/gzmr/" target="_blank">
+                <img src="../images/uwais sangat terkenal di langit.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/xqze/mobile/" target="_blank">
+                <img src="../images/panduan puasa ramadan.jpeg" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/zvcm/mobile/" target="_blank">
+                <img src="../images/persiapan malam nisfu syaban.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/utpl/mobile/" target="_blank">
+                <img src="../images/adikku sayang.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/oiqm/mobile/index.html" target="_blank">
+                <img src="../images/ayah tolong jangan merokok.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/hkdu/mobile/" target="_blank">
+                <img src="../images/amalkan sikap mulia.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/yxkr/mobile/" target="_blank">
+                <img src="../images/10 hadis.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/qjfr/mobile/" target="_blank">
+                <img src="../images/pemuda jujur.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/tapu/mobile/" target="_blank">
+                <img src="../images/kisah ehsan dan rakan2.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/pmmf/mobile/" target="_blank">
+                <img src="../images/suku kata.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/uxcn/mobile/index.html" target="_blank">
+                <img src="../images/bawang merah bawang putih.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/mgkp/mobile/" target="_blank">
+                <img src="../images/penjagaan gigi.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/gydn/mobile/" target="_blank">
+                <img src="../images/hutan yang ku sayang.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/qtuo/mobile/" target="_blank">
+                <img src="../images/cinderella.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/pcue/mobile/" target="_blank">
+                <img src="../images/alam lautan.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.anyflip.com/eevtz/vigj/mobile/" target="_blank">
+                <img src="../images/lipan.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.fliphtml5.com/oiwnc/yvxd/" target="_blank">
+                <img src="../images/seronoknya quran.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.fliphtml5.com/oiwnc/mgdi/" target="_blank">
+                <img src="../images/100 kata2.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.fliphtml5.com/oiwnc/cogz/" target="_blank">
+                <img src="../images/seronoknya hadis.png" alt="" class="cover-image">
+            </a>
+            <a href="https://online.fliphtml5.com/oiwnc/hgse/" target="_blank">
+                <img src="../images/75 kesalahan popular.png" alt="" class="cover-image">
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Bahagian Last Kekal Berhubung -->
+    <section class="lsection">
+        <div class="lsection-container">
+            <div class="lsection-col">
+                <img src="" alt="">
+                <p>"Di sinilah ilmu menyentuh jiwa — Pusat Sumber SAPG2 membentuk generasi berilmu, berakhlak dan
+                    berpandangan jauh."
+                </p>
+                <div class="lsection-social">
+                    <a href="https://www.facebook.com/profile.php?id=61564411024263" target="_blank"><i
+                            class="fa-brands fa-square-facebook"></i></i></a>
+                </div>
+            </div>
+
+            <div class="lsection-col">
+                <h3>Pautan Pantas Untuk Murid, Ibu bapa dan Guru</h3>
+                <ul>
+                    <li><a href="permainan.html">Pusat Interaktif Digital</a></li>
+                    <li><a href="soalan.html">Koleksi Soalan Peperiksaan Lepas</a></li>
+                    <li><a href="borang.html">Borang Online</a></li>
+
+                </ul>
+            </div>
+            <div class="lsection-col">
+                <h3>Kekal Berhubung</h3>
+                <p>Jom meneroka dan belajar bersama!</p>
+                <p>📍Jalan Tembusu, Taman Air Biru, Pasir Gudang, Malaysia</p>
+                <p>📞 +6018 7732701</p>
+                <p>✉️ sekagamapasirgudang2@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- whatsapp -->
+    <a href="https://wa.me/+60187732701" class="whatsapp" title="whatsapp chat">
+        <i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i>
+    </a>
+
+
+    <footer>
+        <div class="footer-bottom">
+            © 2025 PSS Agama Pasir Gudang 2– All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>

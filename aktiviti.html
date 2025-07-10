@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Sumber Sekolah Agama Pasir Gudang 2</title>
+    <link rel="icon" type="image/x-icon" href="images/logo sekolah.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="top-menu">
+        <div class="contact-info">
+            <span>sekagamapasirgudang2@gmail.com</span>
+            <span>+6018 7732701</span>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61564411024263" target="blank"><i
+                    class="fab fa-facebook-f"></i></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="images/logo sekolah 2.png" alt="logo sekolah">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                &#9776;<span class="menu-label">Menu</span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Laman Utama</a></li>
+                <li class="has-submenu">
+                    <a href="#">Koleksi Bahan</a>
+                    <ul class="submenu">
+                        <li><a href="bukuteks.html"><i class="fas fa-arrow-right"></i>Buku Teks</a></li>
+                        <li><a href="bacaanringan.html"><i class="fas fa-arrow-right"></i>Bacaan Ringan</a></li>
+                        <li><a href="akhbar.html"><i class="fas fa-arrow-right"></i>Bacaan Akhbar Online</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="#" class="active">Program</a>
+                    <ul class="submenu">
+                        <li><a href="aktiviti.html" class="active"><i class="fas fa-arrow-right"></i>Aktiviti</a></li>
+                        <li><a href="permainan.html"><i class="fas fa-arrow-right"></i>Permainan Interaktif</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="has-submenu">
+                    <a href="#">Tentang Kami</a>
+                    <ul class="submenu">
+                        <li><a href="carta_organisasi.html"><i class="fas fa-arrow-right"></i>Carta Organisasi</a>
+                        </li>
+                        <li><a href="visi.html"><i class="fas fa-arrow-right"></i>Visi dan Misi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="kemudahan.html">Kemudahan</a>
+                </li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const submenuParents = document.querySelectorAll('.has-submenu > a');
+
+        // Toggle main menu
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Toggle each submenu in mobile
+        submenuParents.forEach(link => {
+            link.addEventListener('click', function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault(); // prevent page reload
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        });
+    </script>
+
+    <!-- Tajuk Hero -->
+    <div class="showcase-hero">
+        <div class="showcase-hero-container">
+            <h2 class="showcase-text">Aktiviti Sekolah</h2>
+        </div>
+    </div>
+    </div>
+
+    <!-- Section aktiviti kami -->
+    <section class="aktiviti">
+        <div class="aktiviti-container">
+            <!-- Maklumat dari gambar aktiviti kepimpinan-->
+            <div class="aktiviti-text">
+                <h2 class="aktiviti-title">KEM KEPIMPINAN SEKOLAH AGAMA PASIR GUDANG 2 BAGI SESI 2024/2025. (Bahagian
+                    1)</h2>
+                <p class="aktiviti-tarikh">Tarikh: 13 Okt 2024</p>
+                <p class="aktiviti-desc">
+                    Pada Hari Ahad (13/10/24), Sekolah Agama Pasir Gudang 2 telah mengadakan Sambutan Maulidurrasul SAW
+                    peringkat sekolah.
+                    Antara program yang diadakan ialah persembahan qasidah, nasyid oleh murid tahap satu dan dua, serta
+                    ceramah oleh al-Fadhil Ustaz Mohammad Azlan Bin Alias.
+                    Semoga sambutan ini menyemarakkan cinta kepada Rasulullah SAW.
+                    <br><strong>#SAPGCemerlangTerbilang</strong>
+                </p>
+            </div>
+
+            <!-- Slider -->
+            <div class="slider">
+                <div class="slides">
+                    <img src="../images/akt2mr1.jpeg" class="slide" alt="Image2 1">
+                    <img src="../images/akt2mr2.jpeg" class="slide" alt="Image2 2">
+                    <img src="../images/akt2mr3.jpeg" class="slide" alt="Image2 3">
+                    <img src="../images/akt2mr4.jpeg" class="slide" alt="Image2 4">
+                    <img src="../images/akt2mr5.jpeg" class="slide" alt="Image2 5">
+                    <img src="../images/akt2mr6.jpeg" class="slide" alt="Image2 6">
+                    <img src="../images/akt2mr7.jpeg" class="slide" alt="Image2 7">
+                    <img src="../images/akt2mr8.jpeg" class="slide" alt="Image2 8">
+                    <img src="../images/akt2mr9.jpeg" class="slide" alt="Image2 9">
+                    <img src="../images/akt2mr10.jpeg" class="slide" alt="Image2 10">
+                    <img src="../images/akt2mr11.jpeg" class="slide" alt="Image2 11">
+                    <img src="../images/akt2mr12.jpeg" class="slide" alt="Image2 12">
+                    <img src="../images/akt2mr13.jpeg" class="slide" alt="Image2 13">
+                    <img src="../images/akt2mr14.jpeg" class="slide" alt="Image2 14">
+                    <img src="../images/akt2mr15.jpeg" class="slide" alt="Image2 15">
+                    <img src="../images/akt2mr16.jpeg" class="slide" alt="Image2 16">
+                    <img src="../images/akt2mr17.jpeg" class="slide" alt="Image2 17">
+                    <img src="../images/akt2mr18.jpeg" class="slide" alt="Image2 18">
+                    <img src="../images/akt2mr19.jpeg" class="slide" alt="Image2 19">
+                    <img src="../images/akt2mr20.jpeg" class="slide" alt="Image2 120">
+                </div>
+
+                <!-- Prev/next button -->
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+
+                <!-- Dot -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sambutan maulidurrasul-->
+        <div class="aktiviti-container">
+            <!-- Slider -->
+            <div class="slider">
+                <div class="slides">
+                    <img src="../images/akt1mr1.jpeg" class="slide" alt="Image 1">
+                    <img src="../images/akt1mr2.jpeg" class="slide" alt="Image 2">
+                    <img src="../images/akt1mr3.jpeg" class="slide" alt="Image 3">
+                    <img src="../images/akt1mr4.jpeg" class="slide" alt="Image 4">
+                    <img src="../images/akt1mr5.jpeg" class="slide" alt="Image 5">
+                    <img src="../images/akt1mr6.jpeg" class="slide" alt="Image 6">
+                    <img src="../images/akt1mr7.jpeg" class="slide" alt="Image 7">
+                    <img src="../images/akt1mr8.jpeg" class="slide" alt="Image 8">
+                </div>
+
+                <!-- Prev/next buttons -->
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+
+                <!-- Dots -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+
+            <!-- Maklumat dari gambar-->
+            <div class="aktiviti-text">
+                <h2 class="aktiviti-title">SAMBUTAN MAULIDURRASUL SAW PERINGKAT SEKOLAH
+                </h2>
+                <p class="aktiviti-tarikh">Tarikh: 16 & 17 Ogos 2024</p>
+                <p class="aktiviti-desc">
+                    Pada 16 dan 17 Ogos 2024, Sekolah Agama Pasir Gudang 2 telah bekerjasama dengan Sekolah Agama Bandar
+                    Seri Alam bagi menjalankan Kem Kepimpinan Murid sesi 2024/2025 yang bertempat di D' Bemban Camp &
+                    Eco Resort, Kulai.
+                    Kem Kepimpinan ini telah disertai oleh barisan kepimpinan murid yang terdiri daripada pengawas
+                    sekolah, pengawas pusat sumber, ketua dan penolong darjah.
+                    <br><strong>#SAPGCemerlangTerbilang</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.querySelectorAll('.slider').forEach((slider, sliderIndex) => {
+            let currentIndex = 0;
+            const slides = slider.querySelectorAll('.slide');
+            const dots = slider.querySelectorAll('.dot');
+            const slidesWrapper = slider.querySelector('.slides');
+            const prevBtn = slider.querySelector('.prev');
+            const nextBtn = slider.querySelector('.next');
+
+            function showSlide(index) {
+                if (index >= slides.length) currentIndex = 0;
+                else if (index < 0) currentIndex = slides.length - 1;
+                else currentIndex = index;
+
+                const offset = -currentIndex * 100;
+                slidesWrapper.style.transform = `translateX(${offset}%)`;
+
+                dots.forEach(dot => dot.classList.remove('active'));
+                if (dots[currentIndex]) dots[currentIndex].classList.add('active');
+            }
+
+            // Bind dots
+            dots.forEach((dot, idx) => {
+                dot.addEventListener('click', () => showSlide(idx));
+            });
+
+            // Buttons
+            prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
+            nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+
+            // Auto Slide with different timing
+            const intervals = [5000, 6000]; // First slider = 5s, second slider = 7s
+            const intervalTime = intervals[sliderIndex] || 5000; // fallback to 5s
+            setInterval(() => {
+                showSlide(currentIndex + 1);
+            }, intervalTime);
+
+            showSlide(0); // Initialize
+        });
+    </script>
+
+
+    <!-- Bahagian Last Kekal Berhubung -->
+    <section class="lsection">
+        <div class="lsection-container">
+            <div class="lsection-col">
+                <img src="" alt="">
+                <p>"Di sinilah ilmu menyentuh jiwa — Pusat Sumber SAPG2 membentuk generasi berilmu, berakhlak dan
+                    berpandangan jauh."
+                </p>
+                <div class="lsection-social">
+                    <a href="https://www.facebook.com/profile.php?id=61564411024263" target="_blank"><i
+                            class="fa-brands fa-square-facebook"></i></i></a>
+                </div>
+            </div>
+
+            <div class="lsection-col">
+                <h3>Pautan Pantas Untuk Murid, Ibu bapa dan Guru</h3>
+                <ul>
+                    <li><a href="permainan.html">Pusat Interaktif Digital</a></li>
+                    <li><a href="soalan.html">Koleksi Soalan Peperiksaan Lepas</a></li>
+                    <li><a href="borang.html">Borang Online</a></li>
+
+                </ul>
+            </div>
+            <div class="lsection-col">
+                <h3>Kekal Berhubung</h3>
+                <p>Jom meneroka dan belajar bersama!</p>
+                <p>📍Jalan Tembusu, Taman Air Biru, Pasir Gudang, Malaysia</p>
+                <p>📞 +6018 7732701</p>
+                <p>✉️ sekagamapasirgudang2@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- whatsapp -->
+    <a href="https://wa.me/+60187732701" class="whatsapp" title="whatsapp chat">
+        <i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i>
+    </a>
+
+
+    <footer>
+        <div class="footer-bottom">
+            © 2025 PSS Agama Pasir Gudang 2 – All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Sumber Sekolah Agama Pasir Gudang 2</title>
+    <link rel="icon" type="image/x-icon" href="images/logo sekolah.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="top-menu">
+        <div class="contact-info">
+            <span>sekagamapasirgudang2@gmail.com</span>
+            <span>+6018 7732701</span>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61564411024263" target="blank"><i
+                    class="fab fa-facebook-f"></i></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="images/logo sekolah 2.png" alt="logo sekolah">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                &#9776;<span class="menu-label">Menu</span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Laman Utama</a></li>
+                <li class="has-submenu">
+                    <a href="#">Koleksi Bahan</a>
+                    <ul class="submenu">
+                        <li><a href="bukuteks.html"><i class="fas fa-arrow-right"></i>Buku Teks</a></li>
+                        <li><a href="bacaanringan.html"><i class="fas fa-arrow-right"></i>Bacaan Ringan</a></li>
+                        <li><a href="akhbar.html"><i class="fas fa-arrow-right"></i>Bacaan Akhbar Online</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="#">Program</a>
+                    <ul class="submenu">
+                        <li><a href="aktiviti.html"><i class="fas fa-arrow-right"></i>Aktiviti</a></li>
+                        <li><a href="permainan.html"><i class="fas fa-arrow-right"></i>Permainan Interaktif</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="has-submenu">
+                    <a href="#">Tentang Kami</a>
+                    <ul class="submenu">
+                        <li><a href="carta_organisasi.html"><i class="fas fa-arrow-right"></i>Carta Organisasi</a>
+                        </li>
+                        <li><a href="visi.html"><i class="fas fa-arrow-right"></i>Visi dan Misi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="kemudahan.html">Kemudahan</a>
+                </li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const submenuParents = document.querySelectorAll('.has-submenu > a');
+
+        // Toggle main menu
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Toggle each submenu in mobile
+        submenuParents.forEach(link => {
+            link.addEventListener('click', function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault(); // prevent page reload
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        });
+    </script>
+
+    <!-- Tajuk Hero -->
+    <div class="showcase-hero">
+        <div class="showcase-hero-container">
+            <h2 class="showcase-text">Buku Rujukan Tahun 5-6</h2>
+        </div>
+    </div>
+
+
+    <!-- Section buku tahun 5-6 -->
+
+    <section class="card-page-container">
+        <div class="card-wrapper">
+            <h2>Tahun 5</h2>
+            <div class="card-bacaan-section">
+                <a href="docs/D5-02 HAFAZAN.pdf" target="_blank">
+                    <img src="images/d5card3hafazan.png" alt="" class="cover-image">Hafazan</a>
+                <a href="docs/D5-03 TAJWID.pdf" target="_blank">
+                    <img src="images/d5card3tajwid.png" alt="" class="cover-image">Tajwid</a>
+                <a href="docs/D5-04 TAFSIR DAN HADIS.pdf" target="_blank">
+                    <img src="images/d5card3tafsiralqurandanhadis.png" alt="" class="cover-image">Tafsir & Hadis</a>
+                <a href="docs/D5-05 TAUHID.pdf" target="_blank">
+                    <img src="images/d5card3tauhid.png" alt="" class="cover-image">Tauhid</a>
+                <a href="docs/D5-07 MUAMALAT.pdf" target="_blank">
+                    <img src="images/d5card3muamalat.png" alt="" class="cover-image">Muamalat</a>
+                <a href="docs/D5-08 MUNAKAHAT.pdf" target="_blank">
+                    <img src="images/d5card3munakahat.png" alt="" class="cover-image">Munakahat</a>
+                <a href="docs/D5-09 JINAYAT.pdf" target="_blank">
+                    <img src="images/d5card3jinayat.png" alt="" class="cover-image">Jinayat</a><a
+                    href="docs/D5-10 FARAID.pdf" target="_blank">
+                    <img src="images/d5card3faraid.png" alt="" class="cover-image">Faraid</a>
+                <a href="docs/D5-11 AMALAN LAZIM.pdf" target="_blank">
+                    <img src="images/d5card3amalanlazim.png" alt="" class="cover-image">Amalan Lazim</a>
+                <a href="docs/D5-12 BAHASA ARAB.pdf" target="_blank">
+                    <img src="images/d5card3bahasaarab.png" alt="" class="cover-image">Bahasa Arab</a>
+                <a href="docs/D5-13 AKHLAK DAN TASAWUF.pdf" target="_blank">
+                    <img src="images/d5card3akhlakdantasawuf.png" alt="" class="cover-image">Akhlak & Tasawuf</a>
+                <a href="docs/D5-14 SIRAH.pdf" target="_blank">
+                    <img src="images/d5card3sirah.png" alt="" class="cover-image">Sirah</a>
+                <a href="docs/D5-15 JAWI DAN KHAT.pdf" target="_blank">
+                    <img src="images/d5card3jawidankhat.png" alt="" class="cover-image">Jawi & Khat</a>
+                <a href="docs/D5-16 KIJ.pdf" target="_blank">
+                    <img src="images/d5card3kij.png" alt="" class="cover-image">KIJ</a>
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <h2>Tahun 6</h2>
+            <div class="card-bacaan-section">
+                <a href="docs/D6-02 HAFAZAN.pdf" target="_blank">
+                    <img src="images/d6card3hafazan.png" alt="" class="cover-image">Hafazan</a>
+                <a href="docs/D6-03 TAJWID.pdf" target="_blank">
+                    <img src="images/d6card3tajwid.png" alt="" class="cover-image">Tajwid</a>
+                <a href="docs/D6-04 TAFSIR.pdf" target="_blank">
+                    <img src="images/d6card3tafsiralqurandanhadith.png" alt="" class="cover-image">Tafsir & Hadith</a>
+                <a href="docs/D6-05 TAUHID.pdf" target="_blank">
+                    <img src="images/d6card3tauhid.png" alt="" class="cover-image">Tauhid</a>
+                <a href="docs/D6-07 MUAMALAT.pdf" target="_blank">
+                    <img src="images/d6card3muamalat.png" alt="" class="cover-image">Muamalat</a>
+                <a href="docs/D6-08 MUNAKAHAT.pdf" target="_blank">
+                    <img src="images/d6card3munakahat.png" alt="" class="cover-image">Munakahat</a>
+                <a href="docs/D6-09 JINAYAT.pdf" target="_blank">
+                    <img src="images/d6card3jinayat.png" alt="" class="cover-image">Jinayat</a>
+                <a href="docs/D6-10 FARAID.pdf" target="_blank">
+                    <img src="images/d6card3faraid.png" alt="" class="cover-image">Faraid</a>
+                <a href="docs/D6-11 AMALAN LAZIM.pdf" target="_blank">
+                    <img src="images/d6card3amalanlazim.png" alt="" class="cover-image">Amalan Lazim</a>
+                <a href="docs/D6-12 BAHASA ARAB.pdf" target="_blank">
+                    <img src="images/d6card3bahasaarab.png" alt="" class="cover-image">Bahasa Arab</a>
+                <a href="docs/D6-13 AKHLAK dan TASAWUF.pdf" target="_blank">
+                    <img src="images/d6card3akhlakdantasawuf.png" alt="" class="cover-image">Akhlak & Tasawuf</a>
+                <a href="docs/D6-14 SIRAH.pdf" target="_blank">
+                    <img src="images/d6card3sirah.png" alt="" class="cover-image">Sirah</a>
+                <a href="docs/D6-15 JAWI dan KHAT.pdf" target="_blank">
+                    <img src="images/d6card3jawidankhat.png" alt="" class="cover-image">Jawi dan Khat</a>
+                <a href="docs/D6-16 KIJ.pdf" target="_blank">
+                    <img src="images/d6card3kij.png" alt="" class="cover-image">KIJ</a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="darjahbutton">
+        <a href="index.html" class="back-button">Kembali</a>
+    </div>
+
+
+
+
+
+    <!-- Bahagian Last Kekal Berhubung -->
+    <section class="lsection">
+        <div class="lsection-container">
+            <div class="lsection-col">
+                <img src="" alt="">
+                <p>"Di sinilah ilmu menyentuh jiwa — Pusat Sumber SAPG2 membentuk generasi berilmu, berakhlak dan
+                    berpandangan jauh."
+                </p>
+                <div class="lsection-social">
+                    <a href="https://www.facebook.com/profile.php?id=61564411024263" target="_blank"><i
+                            class="fa-brands fa-square-facebook"></i></i></a>
+                </div>
+            </div>
+
+            <div class="lsection-col">
+                <h3>Pautan Pantas Untuk Murid, Ibu bapa dan Guru</h3>
+                <ul>
+                    <li><a href="permainan.html">Pusat Interaktif Digital</a></li>
+                    <li><a href="soalan.html">Koleksi Soalan Peperiksaan Lepas</a></li>
+                    <li><a href="borang.html">Borang Online</a></li>
+
+                </ul>
+            </div>
+            <div class="lsection-col">
+                <h3>Kekal Berhubung</h3>
+                <p>Jom meneroka dan belajar bersama!</p>
+                <p>📍Jalan Tembusu, Taman Air Biru, Pasir Gudang, Malaysia</p>
+                <p>📞 +6018 7732701</p>
+                <p>✉️ sekagamapasirgudang2@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- whatsapp -->
+    <a href="https://wa.me/+60187732701" class="whatsapp" title="whatsapp chat">
+        <i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i>
+    </a>
+
+
+    <footer>
+        <div class="footer-bottom">
+            © 2025 PSS Agama Pasir Gudang 2 – All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
