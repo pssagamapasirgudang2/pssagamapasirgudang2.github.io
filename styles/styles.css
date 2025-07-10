@@ -188,7 +188,7 @@ body {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .nav-menu {
         display: none;
         flex-direction: column;
