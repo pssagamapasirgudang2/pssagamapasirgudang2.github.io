@@ -716,11 +716,10 @@ iframe {
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
-    max-width: 1200px;
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 15px;
+    padding: 0 100px;
 }
 
 .lsection-col {
