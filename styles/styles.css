@@ -295,17 +295,16 @@ body {
 .showcase-hero {
     display: flex;
     justify-content: center;
-    height: 30vh;
     align-items: center;
     text-align: center;
-    background: url("../images/hero background.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 30vh;
+    padding: 40px 20px;
+    background: url("images/hero background.svg") center/cover no-repeat;
 }
 
 .showcase-hero-container {
-    font-size: 30px;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .showcase-text {
@@ -316,6 +315,29 @@ body {
     transform: translateY(20px);
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.3s;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .showcase-hero {
+        padding: 40px 15px;
+        min-height: 40vh;
+    }
+
+    .showcase-text {
+        font-size: 28px;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .showcase-hero {
+        padding: 20px 15px;
+        min-height: 50vh;
+    }
+
+    .showcase-text {
+        font-size: 24px;
+    }
 }
 
 /* ############### Section 1 pengenalan ringkas - index ######################### */
