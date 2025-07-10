@@ -693,6 +693,7 @@ iframe {
     background-color: #f2fff2;
     color: black;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .lsection-container {
@@ -705,6 +706,7 @@ iframe {
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
+    padding: 0 15px;
 }
 
 .lsection-col {
@@ -779,6 +781,7 @@ iframe {
     .lsection-container {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
     .lsection-col {
@@ -786,12 +789,21 @@ iframe {
         max-width: 100%;
     }
 
+    .lsection-col ul {
+        padding-left: 0;
+    }
+
     .lsection-col ul li {
         font-size: 15px;
+        text-align: left;
     }
 
     .lsection-col p {
         font-size: 15px;
+    }
+
+    .lsection-col h3 {
+        text-align: center;
     }
 }
 
