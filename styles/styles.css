@@ -14,35 +14,72 @@ body {
 }
 
 /* ############### top menu styling ######################### */
-
 .top-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: #222;
     color: white;
     padding: 10px 100px;
-    text-align: center;
     font-size: 14px;
     flex-wrap: wrap;
-}
-
-.contact-info span {
-    margin: 0 10px;
+    gap: 10px;
 }
 
 .contact-info {
-    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-info span {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
 }
 
 .social-media a {
     color: white;
-    margin-left: 15px;
-    transition: color 0.3s;
+    transition: transform 0.3s, color 0.3s;
 }
 
 .social-media a:hover {
     transform: scale(1.3) translateY(-5px);
     color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    .top-menu {
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center; /* Center each span */
+        gap: 5px;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .top-menu {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .social-media a {
+        font-size: 14px;
+    }
 }
 
 /* ############### navigation menu styling ######################### */
