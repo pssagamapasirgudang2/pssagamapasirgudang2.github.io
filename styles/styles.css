@@ -179,7 +179,6 @@ body {
     margin-left: 8px;
 }
 
-
 @media (min-width: 800px) {
     .has-submenu:hover .submenu {
         display: block;
@@ -187,21 +186,27 @@ body {
 }
 
 
-@media (min-width: 901px) {
+@media (max-width: 900px) {
     .nav-menu {
-        display: flex !important;
-        flex-direction: row;
-        position: static;
-        width: auto;
-        padding: 0;
-        box-shadow: none;
-        background: none;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #fff;
+        padding: 10px 0;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
     }
 
     .hamburger {
-        display: none;
+        display: flex;
+        align-items: center;
     }
-}
 
     .submenu {
         position: static;
@@ -218,7 +223,6 @@ body {
     font-weight: bold;
     color: #222;
 }
-
 
 
 /* ############### showcase styling ######################### */
