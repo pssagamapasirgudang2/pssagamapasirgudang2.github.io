@@ -1320,7 +1320,6 @@ textarea {
     gap: 20px;
 }
 
-
 .cover-image {
     width: 150px;
     height: 220px;
@@ -1328,7 +1327,15 @@ textarea {
     margin: 10px auto;
     object-fit: cover;
     margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+}
+
+.cover-image:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    cursor: pointer;
 }
 
 @media (max-width: 800px) {
