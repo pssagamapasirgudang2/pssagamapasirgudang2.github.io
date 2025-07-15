@@ -1318,7 +1318,8 @@ textarea {
     max-width: 450px;
     height: 420px;
     perspective: 1000px;
-    flex: 1;
+    flex: 1 1 300px;
+    min-width: 280px;
 }
 
 .flip-card-inner {
